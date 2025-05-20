@@ -1,0 +1,80 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+.form-div{
+    background-color: aqua;
+    width: 55rem;
+    height: 35rem;
+    margin-top: 5rem;
+    justify-content: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    align-self: center;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 30rem;
+}
+
+form input{
+    width: 30rem;
+    height: 2em;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+
+}
+
+form button{
+    width: 20em;
+    height: 3em;
+    border-radius: 10px;
+    background-color: darkslategrey;
+    color: white;
+    margin: 15px;
+}
+
+.fortune-answer{
+    background-color: aquamarine;
+    width: 45em;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeBtn{
+    width: 10em;
+    height: 4em;
+    border: 0.2em;
+    border-color: black;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 30px;
+    transition-duration: 1s;
+}
+
+.homeBtn a{
+    color: white;
+}
+
+.homeBtn:hover{
+    background-color: white;
+}
+
+.homeBtn a:hover{
+    color: black;
+}

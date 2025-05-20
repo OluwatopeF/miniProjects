@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "fortune.css">
     <title>Fortune teller</title>
 </head>
 <body>
-    <form>
-        <input type="text" placeholder="State Your Fortune"><br>
-        <button type="button" id="fortuneBtn"> Enter fortune</button>
-        
-        <h2>Answer:</h2>
-        <div>
-            <h1 id = "result"></h1>
-        </div>
-    </form>
+    <div class="form-div">
+        <form>
+            <input type="text" placeholder="State Your Fortune.........................."><br>
+            <button type="button" id="fortuneBtn"> Enter fortune</button>
+
+            
+            <div class="fortune-answer">
+                <h2>Answer:</h2>
+                <h1 id = "result"></h1>
+            </div>
+        </form>
+    </div>
 
 
-    <button class = "homeBtn"><a href="../index.html">Back to main</a></button>
+    <button class = "homeBtn" >
+        <a href="../../index.html">Back to main</a>
+    </button>
 
     <script src = "fortune.js"></script>
 </body>
