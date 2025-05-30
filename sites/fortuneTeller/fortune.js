@@ -51,6 +51,11 @@ function combo(){
     
 }
 
+function clearText(){
+    document.getElementById("textBox").reset();
+}
+
 // events
 document.getElementById("fortuneBtn").addEventListener("click", combo);
+document.getElementById("resetBtn").addEventListener("click", clearText);
 

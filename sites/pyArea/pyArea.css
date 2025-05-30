@@ -1,0 +1,31 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+body{
+    /* background-color: black; */
+    color: green;
+}
+
+.inputAB{
+    display: flex;
+    align-items: center;
+}
+
+.inputAB input{
+    background-color: black;
+    max-width: 300px;
+    height:30px;
+    color: green;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.resultDiv{
+    display: flex;
+}
+
+.resultAns{
+    width: 260px;
+}
