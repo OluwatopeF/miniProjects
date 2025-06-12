@@ -1,13 +1,14 @@
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    /* python color list: black: data & variables,
+     green - strings, purple-functions, orange - commands, blue functions */
 }
 
 body{
     background-color: white;
-    /* python color list: black: data & variables, green - strings, purple-functions, orange - commands, blue functions */
+    
     color: black;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
 }
 
 
@@ -31,10 +32,10 @@ body{
 }
 
 .inputAB input{
-    background-color: black;
-    max-width: 300px;
+    background-color: white;
+    max-width: 140px;
     height:30px;
-    color: green;
+    color: black;
     font-weight: bolder;
     font-size: x-large;
 }
@@ -62,9 +63,24 @@ body{
     right: 4em;
     color: white;
     align-items: center;
+    overflow: hidden;
 
     /* animation effect */
-    transition-duration: 1s;
+    transition-duration: 0.5s;
+}
+
+.lightBtn{
+    display: none;
+}
+
+.darkBtn{
+    display: none;
+}
+
+.returnLk{
+    display: none;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -73,4 +89,6 @@ body{
 .styleMenu{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 8em;
 }

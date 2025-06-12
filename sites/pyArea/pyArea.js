@@ -35,45 +35,72 @@ function setMenu(){
     var m = document.getElementById('mainMenu');
     var styleBtnA = document.getElementById('styleMenubtnA');
     var styleBtnB = document.getElementById('styleMenubtnB');
+    var lk = document.getElementById('returnLk');
     if(m.style.width != "3em"){
         // closes menu
         m.style.width= "3em";
         m.style.height= "3em";
         styleBtnA.style.display = "none";
         styleBtnB.style.display = "none";
+        lk.style.display = "none";
     }
      else {
         // opens menu
         m.style.width = "8em";
-        m.style.height = "3em";
+        m.style.height = "8em";
         styleBtnA.style.display = "block";
         styleBtnB.style.display = "block";
+        lk.style.display = "block";
     }
 }
 
+// Dark mode
 function toDark(){
     debugger;
     var body = document.getElementById('body');
     var m = document.getElementById('mainMenu');
+    var lk = document.getElementById('returnLk');
+    var inA = document.getElementById('inputA');
+    var inB = document.getElementById('inputB');
+
     if(body.style.backgroundColor != "black"){
         body.style.backgroundColor = "black";
         body.style.color = "white";
         m.style.backgroundColor = "white"
         m.style.color = "black";
+        lk.style.color = "black";
+        inA.style.backgroundColor = "white";
+        inA.style.color = "black";
+        inB.style.backgroundColor = "white";
+        inB.style.color = "black";
     }
 }
 
+// Light Mode
 function toLight(){
     var body = document.getElementById('body');
     var m = document.getElementById('mainMenu');
+    var lk = document.getElementById('returnLk');
+    var inA = document.getElementById('inputA');
+    var inB = document.getElementById('inputB');
+
     if(body.style.backgroundColor != "white"){
         body.style.backgroundColor = "white";
         body.style.color = "black";
         m.style.backgroundColor = "black"
         m.style.color = "white";
+        lk.style.color = "white";
+        inA.style.backgroundColor = "black";
+        inA.style.color = "white";
+        inB.style.backgroundColor = "black";
+        inB.style.color = "white";
     }
 }
 
+// Timer to emulate python terminal running
+// ~2 seconds for each text
+// Check if number is on input
+// if there is show area result after ~2 seconds
 
 document.getElementById("inputSend").addEventListener("click", getArea);
 document.getElementById("mainMenu").addEventListener("click", setMenu);
