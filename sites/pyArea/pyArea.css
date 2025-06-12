@@ -4,10 +4,27 @@
 }
 
 body{
-    /* background-color: black; */
-    color: green;
+    background-color: white;
+    /* python color list: black: data & variables, green - strings, purple-functions, orange - commands, blue functions */
+    color: black;
+    transition-duration: 1s;
 }
 
+
+/* Main div */
+.bodyDiv{
+    display: flex;
+}
+
+.pyBackground{
+    margin: 2em;
+}
+.pycoddBackground{
+    margin: 2em;
+}
+
+
+/* input */
 .inputAB{
     display: flex;
     align-items: center;
@@ -21,11 +38,39 @@ body{
     font-weight: bolder;
     font-size: x-large;
 }
-
+.sendBtn{
+    display: none;
+}
+/* result */
 .resultDiv{
     display: flex;
 }
 
 .resultAns{
     width: 260px;
+}
+
+/* main menu(opened) */
+.mainMenu{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    /* position: absolute; */
+    top: 5em;
+    right: 4em;
+    color: white;
+    align-items: center;
+
+    /* animation effect */
+    transition-duration: 1s;
+}
+
+
+
+/* opens after clicking style button */
+.styleMenu{
+    display: flex;
+    flex-direction: column;
 }

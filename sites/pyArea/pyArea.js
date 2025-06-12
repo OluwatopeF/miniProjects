@@ -29,4 +29,53 @@ document.getElementById('inputB').addEventListener("keypress", function (event){
     }
 });
 
+// mainMenu: open menu(closed by default)
+// NEEDS REWORK
+function setMenu(){
+    var m = document.getElementById('mainMenu');
+    var styleBtnA = document.getElementById('styleMenubtnA');
+    var styleBtnB = document.getElementById('styleMenubtnB');
+    if(m.style.width != "3em"){
+        // closes menu
+        m.style.width= "3em";
+        m.style.height= "3em";
+        styleBtnA.style.display = "none";
+        styleBtnB.style.display = "none";
+    }
+     else {
+        // opens menu
+        m.style.width = "8em";
+        m.style.height = "3em";
+        styleBtnA.style.display = "block";
+        styleBtnB.style.display = "block";
+    }
+}
+
+function toDark(){
+    debugger;
+    var body = document.getElementById('body');
+    var m = document.getElementById('mainMenu');
+    if(body.style.backgroundColor != "black"){
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        m.style.backgroundColor = "white"
+        m.style.color = "black";
+    }
+}
+
+function toLight(){
+    var body = document.getElementById('body');
+    var m = document.getElementById('mainMenu');
+    if(body.style.backgroundColor != "white"){
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+        m.style.backgroundColor = "black"
+        m.style.color = "white";
+    }
+}
+
+
 document.getElementById("inputSend").addEventListener("click", getArea);
+document.getElementById("mainMenu").addEventListener("click", setMenu);
+document.getElementById("styleMenubtnB").addEventListener("click", toDark);
+document.getElementById("styleMenubtnA").addEventListener("click", toLight);

@@ -7,34 +7,112 @@
     <title>Area of Rectangle</title>
 
 </head>
-    <body>
-        <div class="pyBackground">
+    <body id="body">
+        <div class="bodyDiv">
+            <div class="pyBackground">
             <!-- Introduction -->
-            <h1>>>>Hello</h1>
-            <h1>>>>This is a calculator for the area of a rectangle</h1>
+            
+            <h1 id="step1">>Hello</h1>
+            <h1 id="step2">>This is a calculator for the area of a rectangle</h1>
             
             <!-- Enter values for area -->
-            <div class="inputAB" >
-                <h1>>>>enter a: "</h1>  <input type="number" id="inputA" > <h1>"</h1>
+            <div class="inputAB"  id="step3">
+                <h1>>enter l: "</h1>  <input type="number" id="inputA" > <h1>"</h1>
             </div>
 
-            <div class="inputAB" >
-                <h1>>>>enter b: "</h1>  <input type="number" id="inputB" > <h1>"</h1>
+            <div class="inputAB" id="step4">
+                <h1>>enter b: "</h1>  <input type="number" id="inputB" > <h1>"</h1>
             </div>
 
-            <button id="inputSend">Send numbers</button>
+            <button id="inputSend" class="sendBtn">Send numbers</button>
 
 
             <!-- Once the two values are filled, show this div after Enter -->
              <!-- use a button if too complex -->
             <div class="resultDiv" id="result">
-                <h1 class="resultAns">>>>Your area is : </h1> <h1 id="resultNum"></h1>
+                <h1 class="resultAns">>Your area is : </h1> <h1 id="resultNum"></h1>
             </div>
             
-            <!-- Switch styles of website with small menu -->
-            <button class="styleBtn">Style Change</button>
+            <!-- Switch styles of website from small menu -->
+             <!-- lignt/dark mode as minimum -->
+            <div class="mainMenu" id="mainMenu">
+                <!-- requires image -->MENU
+                <div class="styleMenu" id="styleMenu">
+                    <button class="lightBtn" id="styleMenubtnA">Lignt</button>
+                    <button class="darkBtn" id="styleMenubtnB">Dark</button>
+                </div>
+            </div>
+
         </div>
 
+
+        <!-- Shows python code on other side -->
+        <div class="pyCodeBackground">
+
+            <h1>python code:</h1> 
+            <h2>
+                <font color = orange>
+                    def
+                </font>
+                <font color = blue>
+                    area.py
+                </font>
+            </h2>
+            <h2>
+                <font color = purple>
+                    print
+                </font>(
+                <font color = green>
+                    "Hello"
+                </font>)
+            </h2>
+            <h2>
+                <font color = purple>
+                    print
+                </font>(
+                <font color = green>
+                    "This is a calculator for the area of a rectangle"
+                </font>
+                )
+            </h2>
+            <h2>l = 
+                <font color = purple>
+                    int
+                </font>
+            (
+                <font color = purple>
+                    input
+                </font>(
+                <font color = green >
+                    "Enter l: "
+                </font>
+                ))
+            </h2>
+            <h2>b = 
+                <font color = purple>
+                    int
+                </font>
+            (
+                <font color = purple>
+                    input
+                </font>(
+                <font color = green >
+                    "Enter b: "
+                </font>
+                ))
+            </h2>
+            <h2>area = l * b</h2>
+            <h2>
+                <font color = purple>
+                    print
+                </font>(
+                <font color = green>
+                    "Your area is: "
+                </font>    , area)
+            </h2>
+        </div>
+
+        </div>
         <script src="pyArea.js"></script>
     </body>
 </html>
