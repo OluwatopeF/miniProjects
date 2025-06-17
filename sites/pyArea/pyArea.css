@@ -19,6 +19,7 @@ body{
 
 .pyBackground{
     margin: 2em;
+    width: 50em;
 }
 .pycoddBackground{
     margin: 2em;
@@ -27,15 +28,15 @@ body{
 
 /* input */
 .inputAB{
-    display: flex;
+    display: none;
     align-items: center;
 }
 
 .inputAB input{
-    background-color: white;
+    background-color: black;
     max-width: 140px;
     height:30px;
-    color: black;
+    color: white;
     font-weight: bolder;
     font-size: x-large;
 }
@@ -44,7 +45,7 @@ body{
 }
 /* result */
 .resultDiv{
-    display: flex;
+    display: none;
 }
 
 .resultAns{
@@ -64,6 +65,7 @@ body{
     color: white;
     align-items: center;
     overflow: hidden;
+    cursor: pointer;
 
     /* animation effect */
     transition-duration: 0.5s;
@@ -71,10 +73,16 @@ body{
 
 .lightBtn{
     display: none;
+    border-radius: 10px;
+    width: 6em;
+    height: 2em;
 }
 
 .darkBtn{
     display: none;
+    border-radius: 10px;
+    width: 6em;
+    height: 2em;
 }
 
 .returnLk{
@@ -91,4 +99,13 @@ body{
     flex-direction: column;
     justify-content: space-around;
     height: 8em;
+}
+
+
+.step1{
+    display: none;
+}
+
+.step2{
+    display: none;
 }

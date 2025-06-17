@@ -7,6 +7,17 @@ function getArea(){
     console.log("b is :", bInput);
     console.log("area is: ", area);
     document.getElementById("resultNum").innerHTML = area;
+
+    // show result after input
+    result = document.getElementById("result");
+    if(area){
+        result.style.display = "flex";
+    }
+    else{
+        result.style.display = "none";
+    }
+
+    
 }
 
 // to move to next input
@@ -56,7 +67,6 @@ function setMenu(){
 
 // Dark mode
 function toDark(){
-    debugger;
     var body = document.getElementById('body');
     var m = document.getElementById('mainMenu');
     var lk = document.getElementById('returnLk');
@@ -101,6 +111,31 @@ function toLight(){
 // ~2 seconds for each text
 // Check if number is on input
 // if there is show area result after ~2 seconds
+
+
+let timeout1 = setTimeout(showStep1, 2000);
+let timeout2 = setTimeout(showStep2, 3000);
+let timeout3 = setTimeout(showStep3, 4000);
+
+
+function showStep1(){
+    var step1 = document.getElementById('step1');
+    step1.style.display = "block";
+}
+
+function showStep2(){
+    var step2 = document.getElementById('step2');
+    step2.style.display = "block";
+}
+
+function showStep3(){
+    
+    var step3 = document.getElementById('step3');
+    var step4 = document.getElementById('step4');
+    step3.style.display = "flex";
+    step4.style.display = "flex";
+}
+
 
 document.getElementById("inputSend").addEventListener("click", getArea);
 document.getElementById("mainMenu").addEventListener("click", setMenu);
