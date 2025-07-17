@@ -1,0 +1,5 @@
+Signup with either google or regular email
+Get a message that congratulates you and says you got "NOTHING"
+Have the option to delete email at bottom of mail(make it visible)
+Resend every week from signing
+shiny odds(1/4096) for a picture of something close to the word "nothing" for first message

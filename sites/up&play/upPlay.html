@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="upPlay.css">
+    <title>Up & Play</title>
+</head>
+<body id="backGd-Id">
+    <h1 style="font-size: 5.5em; justify-self: center;">Upload & Play</h1>
+
+    <form action="" method="post" enctype="multipart/form-data" id="videoForm">
+        <input type="file" id="fileInput" name="video" accept="video/*">
+        <button type="submit">Submit</button>
+        <!-- need to keep change to mode. use cookies? -->
+        <input type="reset" onclick="location.reload();">
+        <button id="modeBtn" onclick=changeMode()>Dark Mode</button>
+    </form>
+
+    <video controls class="video-display" id="videoElement">
+        Browser does not support video tag
+    </video>
+
+    <!-- using yt instead? -->
+    <!-- <iframe width="1200" height="600" src="" style="display: none;">
+    </iframe> -->
+
+    <script>
+        const videoElement = document.getElementById('videoElement');
+        const fileInput = document.getElementById('fileInput');
+        const videoForm = document.getElementById('videoForm');
+        const modeBtn = document.getElementById('modeBtn');
+        const bkGrd = document.getElementById('backGd-Id');
+
+
+        videoForm.addEventListener('submit', (event) => {
+            console.log('submiting video')
+            fetch(videoForm.action, {
+                method: 'POST',
+                body: new FormData(videoForm),
+            })
+            event.preventDefault();
+        })
+
+        fileInput.addEventListener('change', (event) => {
+            if(event?.target?.files && event.target.files[0]){
+                videoElement.src = URL.createObjectURL(event.target.files[0]);
+                videoElement.load();
+            }
+        })
+
+        function changeMode(){
+            console.log("Change to dark/light");
+            if(bkGrd.style.color == "white" && bkGrd.style.backgroundColor == "black"){
+                bkGrd.style.color = "black";
+                bkGrd.style.backgroundColor = "white";
+            }
+            else{
+                bkGrd.style.color = "white";
+                bkGrd.style.backgroundColor = "black";
+            }
+        };
+        
+    </script>
+    
+</body>
+</html>

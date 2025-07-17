@@ -1,0 +1,4 @@
+upload a video and play it
+have option to rewind, play, pause, etc.
+
+don't worry about background (or keep as dark mode only)

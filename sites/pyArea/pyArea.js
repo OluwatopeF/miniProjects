@@ -57,7 +57,7 @@ function setMenu(){
     }
      else {
         // opens menu
-        m.style.width = "8em";
+        m.style.width = "10em";
         m.style.height = "8em";
         styleBtnA.style.display = "block";
         styleBtnB.style.display = "block";
